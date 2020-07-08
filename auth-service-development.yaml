@@ -1,0 +1,18 @@
+avisng:
+  authservice:
+    asanImza:
+      url: 'http:\\asanimza'
+    jwt:
+      subject: 'azer-sub'
+      issuer: 'azer'
+      audience: 'azer-aud'
+      duration:
+        default: '1d'
+  abacstorage:
+    api:
+      host: '172.24.201.104'
+      port: '31610'
+      baseUrl: '/api/v1/abacstorage'
+  redis:
+    host: '172.24.201.104:'
+    port: '31517'
