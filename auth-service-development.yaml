@@ -10,9 +10,9 @@ avisng:
         default: '1d'
   abacstorage:
     api:
-      host: '172.24.201.104'
-      port: '31610'
+      host: 'abac-storage-lb'
+      port: '80'
       baseUrl: '/api/v1/abacstorage'
   redis:
-    host: '172.24.201.104'
-    port: '31517'
+    host: 'redis'
+    port: '6379'
