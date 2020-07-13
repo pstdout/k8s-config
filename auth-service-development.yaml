@@ -1,7 +1,7 @@
 avisng:
   authservice:
     asanImza:
-      host: 'asanimza'
+      host: 'imza-mock'
       callback: 'http://auth-service/api/v1/auth/private/callback'
     jwt:
       subject: 'azer-sub'
