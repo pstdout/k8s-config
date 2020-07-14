@@ -1,7 +1,9 @@
 avisng:
+  asanImza:
+    api:
+      url: 'http://imza-mock/api/v1/imza'
   authservice:
     asanImza:
-      host: 'imza-mock'
       callback: 'http://auth-service/api/v1/auth/private/callback'
     jwt:
       subject: 'azer-sub'
@@ -11,9 +13,7 @@ avisng:
         default: '1d'
   abacstorage:
     api:
-      host: 'abac-storage-lb'
-      port: '80'
-      baseUrl: '/api/v1/abacstorage'
+      url: 'http://abac-storage-lb/api/v1/abacstorage'
   redis:
     host: 'redis'
     port: '6379'
