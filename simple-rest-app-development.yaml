@@ -1,7 +1,23 @@
-vis:
+spring:
+  application.name: simple-rest-app
   datasource:
+    driverClassName: org.postgresql.Driver
     url: "jdbc:postgresql://${POSTGRES_HOST}:5432/${POSTGRES_DB}"
     username: ${POSTGRES_USER}
     password: ${POSTGRES_PASSWORD}
-  simple-rest-app:
-    context-path: /
+
+management.endpoints.spring.cloud.bus:
+  refresh.enabled: "true"
+  env.enabled: "true"
+
+mybatis:
+  mapperLocations: "classpath:mybatis/mapper/*mapper.xml"
+  type-aliases-package: az.cybernet.vis.simplerest.dto
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+
+server:
+  servlet:
+    context-path://
