@@ -20,4 +20,4 @@ mybatis:
 
 server:
   servlet:
-    context-path://
+    context-path: /
