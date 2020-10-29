@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /
+
+vis:
+  simple-rest-app:
+    url: "http://simple-rest-app/api/v1/test"
+    
